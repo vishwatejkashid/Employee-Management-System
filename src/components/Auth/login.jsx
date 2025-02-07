@@ -1,14 +1,13 @@
 import { useState } from "react";
 
-const Login = () => {
+// eslint-disable-next-line react/prop-types
+const Login = ({handleLogin}) => {
     const [email ,setEmail] = useState('')
     const [pass ,setPass] = useState('')
 
     const submitHandler = (e) =>{
         e.preventDefault();
-        console.log("email is:",email);
-        console.log("password is:",pass);
-
+        handleLogin(email,pass)
         setEmail('');
         setPass('');
 
