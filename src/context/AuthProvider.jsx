@@ -1,6 +1,7 @@
+/* eslint-disable react/prop-types */
 import { createContext, useEffect, useState } from "react";
 import { getLocalStorage, setLocalStorage } from "../utils/LocalStorage";
-
+// localStorage.clear()
 export const AuthContext = createContext()
 const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
