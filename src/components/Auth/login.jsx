@@ -13,7 +13,10 @@ const Login = ({handleLogin}) => {
 
     }
     return ( 
+        <>  
+        
         <div className='flex h-screen w-screen items-center justify-center'>
+            
             <div 
                 className='border-2 rounded-xl border-emerald-600 p-20'>
                 <form 
@@ -52,7 +55,9 @@ const Login = ({handleLogin}) => {
             </div>
 
         </div>
-     );
+     
+        </>
+    ); 
 }
 
 export default Login;
