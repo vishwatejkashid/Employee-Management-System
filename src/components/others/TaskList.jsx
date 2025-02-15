@@ -5,7 +5,7 @@ import Failed from "../TaskList/Failed";
 import New  from "../TaskList/New";
 const TaskList = ({data}) => {
     return (  
-        <div id="taskList" className="h-[55%] overflow-x-auto w-full mt-10 py-5 flex justify-start items-center gap-5 flex-nowrap overflox-x-auto ">
+        <div id="taskList" className="h-[55%] overflow-x-auto  w-full mt-10 py-5 flex justify-start items-center gap-5">
             {data.tasks.map((elem,idx)=>{
                 
                 if(elem.new_task){

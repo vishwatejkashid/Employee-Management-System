@@ -1,6 +1,5 @@
 import { useState } from "react";
 
-// eslint-disable-next-line react/prop-types
 const Login = ({handleLogin}) => {
     const [email ,setEmail] = useState('')
     const [pass ,setPass] = useState('')
